@@ -1,0 +1,16 @@
+
+<div *ngIf="showPage">
+    <app-navbar [highlight]="'home'"></app-navbar>
+    <div class="item-container">
+        <div *ngIf="showRateUs" class="alert alert-info" role="alert">
+            Rate this app through this <a href="https://www.google.com" class="alert-link">link</a>
+            <button type="button" class="btn btn-info" (click)="closeRateUs()">
+                <i class="bi bi-x"></i>
+            </button>
+    
+          </div>
+        <app-profile class="item"></app-profile>
+        <app-dashboard class="item"></app-dashboard>
+        <app-saved-money class="item"></app-saved-money>
+    </div>
+</div>

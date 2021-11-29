@@ -1,0 +1,21 @@
+.item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    width:700px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.badges{
+    width: 90%;
+}
+
+@media screen and ( max-width: 700px ) { 
+    .home-container { flex-direction: column; }
+    .item {width: 400px;}
+  }

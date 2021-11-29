@@ -1,0 +1,25 @@
+<!-- *ngFor="let post of posts;" -->
+
+<div class="card" *ngFor="let post of posts;" style="margin:30px; padding: 30px;">
+    <h3>{{post.title}}</h3>
+    <p><small>Posted by {{post.user.username}} on {{formatDate(post.dateTime)}}</small></p>
+    <p>{{post.body}}</p>
+    <form #commentData="ngForm" (ngSubmit)="onSubmit(post.id,commentData.value)">
+      <div class="form-group">
+        <textarea name="comment" ngModel class="form-control" id="comment{{post.id}}" rows="3"
+          placeholder="Add a comment.."></textarea>
+      </div>
+      <div class="form-group" style="display: flex; justify-content: right;">
+        <button type="submit" class="btn btn-primary">Comment</button>
+      </div>
+    </form>
+  <div class="card-body">
+    <h4>Comments</h4>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let comment of post.comments">
+        <p><small>By {{comment.user.username}} on {{formatDate(comment.dateTime)}}</small></p>
+        <p>{{comment.comment}}</p>
+      </li>
+    </ul>
+  </div>
+</div>

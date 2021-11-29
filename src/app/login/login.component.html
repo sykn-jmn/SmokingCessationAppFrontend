@@ -1,0 +1,21 @@
+<div class="login_container">
+  <a href="/signup" type="button" class="btn btn-primary" style="position: absolute; right: 10px; top: 10px;">Sign Up</a>
+    <main class="form-signin card">
+      <form #signindata = "ngForm" (ngSubmit)  = "onSubmit(signindata.value)">
+        <h1 class="h1 mb-3 fw-normal label">Sign in</h1>
+        <div *ngIf="loginError"class="alert alert-danger" role="alert">
+          Invalid Username or Password
+        </div>
+    
+        <div class="form-floating">
+          <label for="floatingInput">Username</label>
+          <input type="email" class="form-control" id="floatingInput" placeholder="" name="username" ngModel>
+        </div>
+        <div class="form-floating">
+          <label for="floatingPassword">Password</label>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="" name="password" ngModel>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+      </form>
+    </main>
+</div>

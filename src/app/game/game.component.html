@@ -1,0 +1,12 @@
+<div class="game-container">
+    <div class="card flipOpen" *ngFor="let card of cards; index as i" id="{{i}}" (click)="flip(i)">
+        <div class="back">
+            <i class="bi bi-suit-club-fill"></i>
+        </div>
+        <div class="front">
+            <div class="card-value">
+                <i class="bi bi-{{card.value}}"></i>
+            </div>
+        </div>
+    </div>
+</div>

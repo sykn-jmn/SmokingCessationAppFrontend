@@ -1,0 +1,17 @@
+.card{
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 800px){
+    h3{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 1.4rem;
+    }
+}

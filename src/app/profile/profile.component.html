@@ -1,0 +1,17 @@
+<!-- <p>profile works!</p>
+<img src="https://avatars.githubusercontent.com/u/56058545?v=4" alt=""> -->
+
+<div class="card">
+    <img class="card-img-top" src='{{profileLink}}' alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{username}}</h5>
+      <h5 class="card-title">Date Started: {{dateStarted}}</h5>
+      <h5 class="card-title">City: {{city}}</h5>
+      <h5 class="card-title">Ranking: #{{rank}}</h5>
+    </div>
+    <div class="badge-list">
+      <div *ngFor="let badge of badges; index as i">
+        <img *ngIf="badge.obtained" src="{{'/assets/badges/' + i + '.png'}}" alt="image">
+      </div>
+    </div>
+</div>

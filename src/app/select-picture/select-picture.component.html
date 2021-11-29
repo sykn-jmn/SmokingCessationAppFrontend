@@ -1,0 +1,12 @@
+<div class="cardcontainer">
+    <div class="card" style="max-width: 300px;">
+        <img src="{{imgSrc}}" alt="" width="200px" height="200px"><br>
+        <span>Select Image</span><br>
+        <small>(We encourage not using your real name)</small><br>
+            <input #imageInput
+                    type="file"
+                    accept="image/*"
+                    (change)="processFile(imageInput)">
+            <button (click)="save()">Save</button>
+    </div>
+</div>

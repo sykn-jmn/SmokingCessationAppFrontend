@@ -1,0 +1,16 @@
+<div class="card" style="margin:30px; padding: 30px;">
+    <div class="card-body">
+        <form #postData="ngForm" (ngSubmit)="onSubmit(postData.value)">
+            <div class="form-group">
+                <input name="title" ngModel class="form-control" type="text" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <textarea name="body" ngModel class="form-control" id="addPostBody" rows="3"
+                placeholder="Post Body"></textarea>
+            </div>
+            <div class="form-group" style="display: flex; justify-content: right;">
+              <button type="submit" class="btn btn-primary">Post</button>
+            </div>
+          </form>
+    </div>
+  </div>

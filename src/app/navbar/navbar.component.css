@@ -1,0 +1,71 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar{
+    height: fit-content;
+    position: relative;
+    /* align-content: flex-start; */
+    /* background: lightgray; */
+}
+
+.navbar-brand img{
+    height: 30px;
+}
+
+#hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #007bff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger:focus{
+    outline: none;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+}
+.navbar-brand{
+    color: rgb(58, 58, 58);
+    font-weight: bolder;
+    font-size: x-large;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.signout{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    .nav{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-content: flex-end;
+        text-align: right;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    .nav.show{
+        display: flex;
+    }
+    
+}

@@ -1,0 +1,31 @@
+.card-img-top{
+    width: 10rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height:fit-content;
+    padding: 20px 0px;
+}
+.card-body{
+    flex: none;
+    padding-bottom: 0px;
+}
+
+.badge-list{
+    padding: 20px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.badge-list img{
+    width: 50px;
+}

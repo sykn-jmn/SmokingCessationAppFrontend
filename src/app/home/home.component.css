@@ -1,0 +1,23 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    width:700px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+a{
+    margin-right: 20px;    
+}
+
+@media screen and (max-width: 800px){
+    .item{
+        width:90%;
+    }
+}
